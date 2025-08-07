@@ -1,0 +1,35 @@
+# Ignore node_modules in both frontend and backend
+s3-upload-demo ---Backend/node_modules/
+s3-upload-demo ---Frontend/node_modules/
+
+# Ignore all node_modules at root level (if any)
+node_modules/
+**/node_modules/
+
+# Ignore .env and other environment-specific config files
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+!.env.example
+
+# Ignore testing output
+coverage/
+
+# Ignore production build directories
+build/
+**/build/
+
+# Ignore miscellaneous system files
+.DS_Store
+
+# Ignore package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore package manager files (optional)
+.pnp/
+.pnp.js
